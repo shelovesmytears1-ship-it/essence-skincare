@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essence — Натуральная косметика для вашей кожи</title>
+  <meta name="description" content="Essence — органическая натуральная косметика. Чистые формулы, созданные природой для сияния вашей кожи.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. NAVIGATION -->
+  <header class="nav-header">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">Essence</a>
+      
+      <nav class="nav-links">
+        <a href="#products" class="nav-link">Каталог</a>
+        <a href="#philosophy" class="nav-link">О нас</a>
+        <a href="#ingredients" class="nav-link">Ингредиенты</a>
+        <a href="#footer" class="nav-link">Контакты</a>
+        <a href="#products" class="btn btn-primary" style="padding: 10px 24px;">Подобрать уход</a>
+      </nav>
+      
+      <button class="burger-menu" aria-label="Меню">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. HERO -->
+    <section class="hero">
+      <div class="hero-image-wrapper reveal">
+        <img src="img/Hero%20Block.png" alt="Баночка крема Essence среди зеленых листьев" class="hero-image" loading="lazy">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content hero-stagger">
+        <span class="label text-hero-label">✦ НАТУРАЛЬНЫЙ УХОД</span>
+        <h1>Кожа, которая сияет изнутри</h1>
+        <p>Чистые формулы для повседневного ухода. Растительные экстракты и масла холодного отжима — без агрессивной химии.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">Подобрать уход</a>
+          <a href="#products" class="btn btn-secondary btn-hero-secondary">Каталог &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TRUST BAR -->
+    <section class="trust-bar bg-sage">
+      <div class="container trust-grid">
+        <div class="trust-item reveal">
+          <svg class="trust-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <span>100% натурально</span>
+        </div>
+        <div class="trust-item reveal" style="transition-delay: 100ms">
+          <svg class="trust-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          <span>Concept · 2026</span>
+        </div>
+        <div class="trust-item reveal" style="transition-delay: 200ms">
+          <svg class="trust-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
+          <span>0 парабенов и SLS</span>
+        </div>
+        <div class="trust-item reveal" style="transition-delay: 300ms">
+          <svg class="trust-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+          <span>Эко-упаковка</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. BRAND PHILOSOPHY -->
+    <section id="philosophy" class="section container">
+      <div class="grid-half">
+        <div class="philosophy-image-wrapper reveal">
+          <img src="img/Essence.jpeg" alt="Натуральные ингредиенты и масла для косметики" loading="lazy">
+        </div>
+        <div class="reveal philosophy-text" style="transition-delay: 200ms">
+          <h2>Почему Essence?</h2>
+          <p>Мы верим, что настоящая красота рождается в гармонии с природой. В наших формулах нет места агрессивной химии — только чистые, эффективные экстракты растений и масла холодного отжима.</p>
+          <p>Каждая баночка Essence — это результат долгих исследований и заботы о вашей коже. Мы создаем продукты, которые работают, не нарушая естественный баланс.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PRODUCT LINES -->
+    <section id="products" class="section bg-cream">
+      <div class="container">
+        <h2 class="reveal">Наши линейки</h2>
+        <div class="products-grid">
+          <!-- Card 1 -->
+          <div class="card card-sage reveal">
+            <img src="img/Our%20Lines.png" alt="Увлажнение" class="card-img" loading="lazy">
+            <h3>Увлажнение</h3>
+            <p class="text-muted">Для глубокого питания и восстановления водного баланса кожи 24/7.</p>
+            <a href="#" class="nav-link" style="margin-top: auto; color: var(--accent); font-weight: 600;">Подробнее &rarr;</a>
+          </div>
+          <!-- Card 2 -->
+          <div class="card card-sage reveal" style="transition-delay: 100ms">
+            <img src="img/Our%20Liness.png" alt="Очищение" class="card-img" loading="lazy">
+            <h3>Очищение</h3>
+            <p class="text-muted">Мягкие средства для снятия макияжа и бережного очищения пор без пересушивания.</p>
+            <a href="#" class="nav-link" style="margin-top: auto; color: var(--accent); font-weight: 600;">Подробнее &rarr;</a>
+          </div>
+          <!-- Card 3 -->
+          <div class="card card-sage reveal">
+            <img src="img/Our%20Linesss.png" alt="Anti-age" class="card-img" loading="lazy">
+            <h3>Anti-age</h3>
+            <p class="text-muted">Активные природные компоненты для поддержания упругости и борьбы с морщинами.</p>
+            <a href="#" class="nav-link" style="margin-top: auto; color: var(--accent); font-weight: 600;">Подробнее &rarr;</a>
+          </div>
+          <!-- Card 4 -->
+          <div class="card card-sage reveal" style="transition-delay: 100ms">
+            <img src="img/Our%20Linesssss.png" alt="Защита от солнца" class="card-img" loading="lazy">
+            <h3>Защита от солнца</h3>
+            <p class="text-muted">Натуральные физические фильтры для безопасного нахождения на солнце.</p>
+            <a href="#" class="nav-link" style="margin-top: auto; color: var(--accent); font-weight: 600;">Подробнее &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. BESTSELLER SPOTLIGHT -->
+    <section class="section container">
+      <div class="grid-half">
+        <div class="reveal bestseller-text">
+          <span class="label text-muted">БЕСТСЕЛЛЕР</span>
+          <h2>Хит сезона: Восстанавливающий ночной крем</h2>
+          <p>Наш культовый крем, который работает, пока вы спите. Богатая текстура глубоко питает кожу, восстанавливая её после стрессов прошедшего дня.</p>
+          <ul style="list-style: none; margin-bottom: var(--space-md); padding: 0;">
+            <li style="margin-bottom: 8px; display: flex; gap: 8px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Масло шиповника</li>
+            <li style="margin-bottom: 8px; display: flex; gap: 8px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Сквалан оливковый</li>
+            <li style="margin-bottom: 8px; display: flex; gap: 8px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Церамиды</li>
+          </ul>
+          <div class="price">₴ 890</div>
+          <button class="btn btn-primary">В корзину</button>
+        </div>
+        <div class="bestseller-image reveal" style="transition-delay: 200ms">
+          <img src="img/Best-seller.png" alt="Ночной восстанавливающий крем Essence" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. INGREDIENTS -->
+    <section id="ingredients" class="section bg-sage">
+      <div class="container">
+        <h2 class="reveal text-center" style="text-align: center;">Только то, что создала природа</h2>
+        <div class="ingredients-grid mt-8" style="margin-top: 48px;">
+          <div class="card reveal">
+            <svg class="trust-icon" style="margin-bottom: 16px;" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 7.477 2 13s4.477 9 10 9z"/><path d="M12 22V2"/></svg>
+            <h3 style="font-size: 1.25rem;">Масло жожоба</h3>
+            <p class="text-muted" style="font-size: 0.95rem;">Глубоко питает, не забивая поры. Идеально повторяет структуру себума кожи.</p>
+          </div>
+          <div class="card reveal" style="transition-delay: 100ms">
+            <svg class="trust-icon" style="margin-bottom: 16px;" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            <h3 style="font-size: 1.25rem;">Гиалуроновая к-та</h3>
+            <p class="text-muted" style="font-size: 0.95rem;">Удерживает влагу в клетках, делая кожу упругой и гладкой на весь день.</p>
+          </div>
+          <div class="card reveal" style="transition-delay: 200ms">
+            <svg class="trust-icon" style="margin-bottom: 16px;" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            <h3 style="font-size: 1.25rem;">Экстракт зеленого чая</h3>
+            <p class="text-muted" style="font-size: 0.95rem;">Мощный антиоксидант. Успокаивает воспаления и тонизирует.</p>
+          </div>
+          <div class="card reveal" style="transition-delay: 300ms">
+            <svg class="trust-icon" style="margin-bottom: 16px;" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+            <h3 style="font-size: 1.25rem;">Витамин E</h3>
+            <p class="text-muted" style="font-size: 0.95rem;">Защищает от свободных радикалов, ускоряет регенерацию клеток кожи.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. DAILY RITUAL -->
+    <section class="section container">
+      <div class="text-center" style="text-align: center; margin-bottom: 64px;">
+        <h2 class="reveal">Ваш ежедневный ритуал</h2>
+        <p class="reveal text-muted" style="max-width: 600px; margin: 0 auto;">Три простых шага для здоровой и сияющей кожи каждый день.</p>
+      </div>
+      
+      <div class="ritual-steps">
+        <div class="ritual-step reveal">
+          <div class="step-number">1</div>
+          <h3>Очищение</h3>
+          <p class="text-muted">Мягкий гель или гидрофильное масло для снятия макияжа и загрязнений.</p>
+          <img src="img/Ingredients%20and%20Rituals.png" alt="Очищение" class="ritual-image" loading="lazy">
+        </div>
+        <div class="ritual-step reveal" style="transition-delay: 150ms">
+          <div class="step-number">2</div>
+          <h3>Сыворотка</h3>
+          <p class="text-muted">Активный концентрат с гиалуроновой кислотой для глубокого увлажнения.</p>
+          <img src="img/Ingredients%20and%20Rituals.png" alt="Сыворотка" class="ritual-image" loading="lazy">
+        </div>
+        <div class="ritual-step reveal" style="transition-delay: 300ms">
+          <div class="step-number">3</div>
+          <h3>Крем</h3>
+          <p class="text-muted">Завершающий этап для защиты и закрепления влаги в клетках кожи.</p>
+          <img src="img/Ingredients%20and%20Rituals.png" alt="Крем" class="ritual-image" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. TARGET PERSONAS -->
+    <section class="section bg-cream">
+      <div class="container">
+        <h2 class="reveal">Для кого создан Essence</h2>
+        <p class="reveal text-muted" style="max-width: 600px; margin-top: 12px; margin-bottom: 48px;">Целевые персоны, под которые разрабатывалась линейка. Concept-проект — реальных клиентов на момент дизайн-этапа нет.</p>
+        <div class="testimonials-grid">
+          <div class="card reveal">
+            <div class="persona-label">Персона 01</div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 12px;">Офисный работник</h3>
+            <p>Целевая персона: 28–34 года, ежедневный макияж, сухость от кондиционера. Ищет ночной уход, который восстанавливает кожу к утру, без жирной плёнки.</p>
+            <div style="display: flex; align-items: center; margin-top: auto; padding-top: 16px; gap: 12px;">
+              <div class="persona-avatar persona-avatar--1">ОР</div>
+              <div>
+                <div style="font-weight: 600;">Использует</div>
+                <div class="text-muted" style="font-size: 0.875rem;">Ночной крем + сыворотка</div>
+              </div>
+            </div>
+          </div>
+          <div class="card reveal" style="transition-delay: 150ms">
+            <div class="persona-label">Персона 02</div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 12px;">Чувствительная кожа</h3>
+            <p>Целевая персона: 30–40 лет, реакция на отдушки и SLS, дерматит в анамнезе. Нужны гипоаллергенные формулы без ароматизаторов и спирта.</p>
+            <div style="display: flex; align-items: center; margin-top: auto; padding-top: 16px; gap: 12px;">
+              <div class="persona-avatar persona-avatar--2">ЧК</div>
+              <div>
+                <div style="font-weight: 600;">Использует</div>
+                <div class="text-muted" style="font-size: 0.875rem;">Очищение + базовое увлажнение</div>
+              </div>
+            </div>
+          </div>
+          <div class="card reveal" style="transition-delay: 300ms">
+            <div class="persona-label">Персона 03</div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 12px;">Эко-сознательная</h3>
+            <p>Целевая персона: 25–35 лет, читает составы и фильтрует бренды по этике производства. Важны: cruelty-free, перерабатываемая упаковка, локальные ингредиенты.</p>
+            <div style="display: flex; align-items: center; margin-top: auto; padding-top: 16px; gap: 12px;">
+              <div class="persona-avatar persona-avatar--3">ЭС</div>
+              <div>
+                <div style="font-weight: 600;">Использует</div>
+                <div class="text-muted" style="font-size: 0.875rem;">Полную линейку + SPF</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. SPECIAL OFFER BANNER -->
+    <section class="section bg-dark text-center" style="text-align: center;">
+      <div class="container reveal">
+        <h2 style="margin-bottom: 16px;">-20% на первый заказ</h2>
+        <p style="margin-bottom: 32px;">Подпишитесь на нашу рассылку, чтобы получить промокод и узнавать первыми о новинках.</p>
+        <form class="offer-form">
+          <input type="email" class="offer-input" placeholder="Ваш email адрес" required>
+          <button type="submit" class="btn btn-offer">Получить скидку</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 11. FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Essence</div>
+          <p style="font-size: 0.9rem; max-width: 300px;">Натуральная косметика для бережного ухода за вашей кожей. Создано с любовью к природе и науке.</p>
+        </div>
+        <div>
+          <h3 style="color: var(--bg); font-size: 1.1rem; margin-bottom: 16px;">Навигация</h3>
+          <ul class="footer-links">
+            <li><a href="#products" class="footer-link">Каталог</a></li>
+            <li><a href="#philosophy" class="footer-link">О нас</a></li>
+            <li><a href="#ingredients" class="footer-link">Ингредиенты</a></li>
+            <li><a href="#" class="footer-link">Доставка и оплата</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="color: var(--bg); font-size: 1.1rem; margin-bottom: 16px;">Контакты</h3>
+          <ul class="footer-links">
+            <li>hello@essence.store</li>
+            <li>+380 99 123 45 67</li>
+            <li style="margin-top: 16px; display: flex; gap: 16px;">
+              <!-- Social Icons -->
+              <a href="#" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+              <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Essence. Натуральная косметика. Все права защищены.
+        <br><span class="footer-disclaimer">Concept-проект. Бренд, продукты и отзывы — вымышленные.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

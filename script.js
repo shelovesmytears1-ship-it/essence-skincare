@@ -55,6 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
           navLinks.classList.remove('active');
           burgerMenu.classList.remove('active');
           header.classList.remove('menu-open');
+          document.body.classList.remove('menu-open');
+          burgerMenu.setAttribute('aria-expanded', 'false');
         }
 
         window.scrollTo({
@@ -74,6 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
       burgerBtn.classList.toggle('active');
       navMenu.classList.toggle('active');
       header.classList.toggle('menu-open');
+      const isOpen = navMenu.classList.contains('active');
+      document.body.classList.toggle('menu-open', isOpen);
+      burgerBtn.setAttribute('aria-expanded', String(isOpen));
     });
   }
 });

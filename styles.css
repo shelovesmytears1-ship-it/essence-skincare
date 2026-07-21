@@ -854,25 +854,31 @@ p {
   }
 }
 
-/* Mobile navigation must leave the layout completely, not extend the document. */
 html { overflow-x: clip; }
-.nav-links {
-  right: 0;
-  transform: translateX(100%);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: auto;
-  overscroll-behavior: contain;
+
+/* Mobile navigation must leave the layout completely, not extend the document.
+   Scoped to the mobile breakpoint: unguarded, these rules also re-showed the
+   burger on desktop, because they sit after the `min-width: 1024px` rule that
+   hides it and carry the same specificity. */
+@media (max-width: 1023px) {
+  .nav-links {
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .nav-links.active { transform: translateX(0); }
+  .burger-menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px;
+  }
+  body.menu-open { overflow: hidden; }
 }
-.nav-links.active { transform: translateX(0); }
-.burger-menu {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 44px;
-  min-height: 44px;
-  padding: 10px;
-}
-body.menu-open { overflow: hidden; }
 @media (max-width: 480px) {
   .ingredients-grid { grid-template-columns: minmax(0, 1fr); }
   .ingredients-grid .card h3 { overflow-wrap: anywhere; }
